@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   $('#newAccount').on('click', function(){
     let account = web3.eth.accounts.create();
-    if (DEBUG) console.log("privateKey : ", account.privateKey);'	   
+    if (DEBUG) console.log("privateKey : ", account.privateKey);
     if (DEBUG) console.log("account : ", account.address);
 	  
     $('#fromaddress').val(account.address);
